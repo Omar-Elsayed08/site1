@@ -6,9 +6,16 @@
     <title>Document</title>
 </head>
 <body>
+
+    <form method="GET">
+        <input type="text" name="person">
+        <button>SUBMIT</button>
+    </form>
+
 <?php
-echo"Site1";
+    $name = $_GET['person'];
+    echo $name." loves America!"
 ?>
-   <p>1</p>
+   
 </body>
 </html>
