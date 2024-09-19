@@ -1,21 +1,14 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
-    <style>
-        p{
-            text-align: center;
-            font-size: 200px;
-            font-family: Arial;
-            Margin-top: 38vh;
-        }
-    </style>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">    <title>Bootstrap demo</title>
+  </head>
+  <body>
     <?php
+    include "includes/header.php";
     $dayofweek = date("w");
     //echo $dayofweek;
     switch ($dayofweek){

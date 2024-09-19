@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">    <title>Bootstrap demo</title>
+  </head>
+  <body>
 
     <form>
         <input type="text" name="num1" placeholder="Number 1">
@@ -22,6 +23,8 @@
     </form>
     <p>The answer is:</p>
     <?php
+    include "includes/header.php";
+    '<br>';
      if (isset($_GET['submit'])){
         $result1= $_GET['num1'];
         $result2= $_GET['num2'];
