@@ -9,6 +9,7 @@
   <body>
     <?php
     include "includes/header.php";
+    session_start();
     //While loop
     $x=2;
     while ($x<=5){

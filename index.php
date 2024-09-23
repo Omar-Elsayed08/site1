@@ -15,6 +15,7 @@
 
 <?php
     include "includes/header.php";
+    session_start();
     //This variable is the users input into the submit box
     $name = $_GET['person'];
     //This line echos the users input followed by a generic statement

@@ -9,6 +9,7 @@
   <body>
     <?php
     include "includes/header.php";
+    session_start();
     $x=10;
     if ($x==1 ){
         echo "yellow";

@@ -43,6 +43,17 @@
         </div>
       </div>
     </nav>
-    <!-- End Example Code -->
+    <php
+    
+
+    $_Session['username']="Omar";
+    echo $_Session['username'];
+    if (!isset($_Session['username'])){
+      echo "You are not logged in"
+     } else{
+      echo "You are logged in"
+     }
+    
+    ?>
   </body>
 </html>

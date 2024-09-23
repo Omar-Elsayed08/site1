@@ -9,6 +9,7 @@
   <body>
     <?php
     include "includes/header.php";
+    session_start();
     $dayofweek = date("w");
     //echo $dayofweek;
     switch ($dayofweek){

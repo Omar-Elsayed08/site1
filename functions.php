@@ -9,9 +9,10 @@
   <body>
     <?php
     include "includes/header.php";
+    session_start();
     function newCalc($x){
         $newnr=$x * 2;
-        echo "Congratulations you've just doubled your life savings of:".$newnr;
+        echo "Congratulations you've just doubled your life savings of: ".$newnr;
  }
         $x=100;
         newCalc($x);
