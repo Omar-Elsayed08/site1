@@ -9,7 +9,6 @@
   <body>
     <?php
     include "includes/header.php";
-    session_start();
     //Arithmetic Operator
     echo 100-40;
     echo '<div>';

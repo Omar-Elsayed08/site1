@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <php
+    <?php
     include "includes/header.php";
     session_start();
     setcookie("Name","Omar", time() + 86400);

@@ -7,7 +7,6 @@
   </head>
   <body>
      <?php
-     session_start();
      include "includes/header.php";
     $array= array("Omar","Lebron","Kobe","Joe","Jimothy");
     echo $array[1];

@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <?php
+    session_start()
+    ?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -43,17 +46,19 @@
         </div>
       </div>
     </nav>
-    <php
-    
-
-    $_Session['username']="Omar";
-    echo $_Session['username'];
-    if (!isset($_Session['username'])){
-      echo "You are not logged in"
+    <?php $_Session[' username ']="Omar";
+    echo $_Session[' username '];
+    if (!isset($_Session[' username '])){
+      echo " You are not logged in";
      } else{
-      echo "You are logged in"
-     }
+      echo " You are logged in";
+     } 
+     
+     ?>
     
-    ?>
+<br>
+   
+    
+    
   </body>
 </html>

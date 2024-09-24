@@ -24,7 +24,6 @@
     <p>The answer is:</p>
     <?php
     include "includes/header.php";
-    session_start();
     '<br>';
      if (isset($_GET['submit'])){
         $result1= $_GET['num1'];

@@ -10,7 +10,6 @@
     
 <?php
 include "includes/header.php";
-session_start();
     //String
     $name= "Coding is fun";
 
