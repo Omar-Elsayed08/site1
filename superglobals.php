@@ -8,7 +8,6 @@
 <body>
     <?php
     include "includes/header.php";
-    session_start();
     setcookie("Name","Omar", time() + 86400);
 
     $_SESSION['name']= '12';
