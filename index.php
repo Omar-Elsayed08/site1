@@ -1,40 +1,48 @@
-
 <!doctype html>
-<html lang="en">
+  <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Bootstrap demo</title>
+    <title>Bootstrap Demo</title>
   </head>
-  <body>
-    <form method="GET">
-        <input type="text" name="person">
-        <button>SUBMIT</button>
-    </form>
-    
-<?php 
+
+  <body><?php 
+require "signup-includes/account-header.php";
+include_once 'includes/dbh.inc.php';
+include_once 'includes/header.php';
+
+$sql="SELECT * FROM users;";
+$result=mysqli_query($conn, $sql);
+$resultCheck=mysqli_num_rows($result);
+
+if ($resultCheck > 0) {
+  while ($row=mysqli_fetch_assoc($result)) {
+    echo htmlspecialchars($row['user_uid'])."<br>";
+  }
+}
+
+if (isset($_GET['person'])) {
+  $name=htmlspecialchars($_GET['person']);
+  echo $name." loves America!";
+}
+
 ?>
+<main>
+      <div>
 <?php
-include_once 'includes/dbh.inc.php'
-    include "includes/header.php";
 
-    $sql= "SELECT * FROM users;";
-    $result= mysqli_query($conn, $sql);
-    $resultCheck=mysqli_num_rows($result);
+if (isset($_SESSION['userId'])){
+  echo "You are logged in as ".$_SESSION['userId'];
+}
+else{
+  echo "You are not logged in";
+}
 
-    if ($resultCheck > 0){
-      while ($row=mysqli_fetch_assoc($result)) {
-        echo $row['user_uid']."<br>";
-      }
-    }
-    
-
-    //This variable is the users input into the submit box
-    $name = $_GET['person'];
-    //This line echos the users input followed by a generic statement
-    echo $name." loves America!";
 ?>
-   
-</body>
-</html>
+      </div>
+    </main>
+  </body>
+
+  </html>

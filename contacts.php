@@ -8,11 +8,6 @@
     <title>Bootstrap demo</title>
   </head>
   <body>
-    <form method="GET">
-        <input type="text" name="person">
-        <button>SUBMIT</button>
-    </form>
-    
 <form action="includes/signup.inc.php" method="POST">
   <input type="text" name="first" placeholder="Firstname">
   <br>

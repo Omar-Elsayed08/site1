@@ -40,6 +40,7 @@
               <li><a class="dropdown-item" href="calendar.php">calendar</a></li>
               <li><a class="dropdown-item" href="calculator.php">calculator</a></li>
               <li><a class="dropdown-item" href="arrays.php">arrays</a></li>
+              <li><a class="dropdown-item" href="contacts.php">Contacts</a></li>
             </ul>
           </li>
         </ul>
