@@ -12,7 +12,7 @@ session_start();
 <body>
   <?php
   if (isset($_SESSION['userId'])){
-    echo "You are logged in as ".$_SESSION['uid'];
+    echo "You are logged in ";
   }
   else{
     echo "You are not logged in";

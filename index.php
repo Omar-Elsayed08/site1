@@ -34,7 +34,7 @@ if (isset($_GET['person'])) {
 <?php
 
 if (isset($_SESSION['userId'])){
-  echo "You are logged in as ".$_SESSION['userId'];
+  echo "You are logged in";
 }
 else{
   echo "You are not logged in";
